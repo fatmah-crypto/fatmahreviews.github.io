@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fatmah Finds</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #fff5f8;
+            color: #333;
+        }
+
+        header {
+            background: #e91e63;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #e91e63;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            width: 220px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #e91e63;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Fatmah Finds</h1>
+        <p>Discover. Compare. Choose.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Welcome to Fatmah Finds</h2>
+
+        <p>
+            Discover useful products, shopping tips and honest product reviews
+            all in one place.
+        </p>
+    </section>
+
+    <section id="reviews">
+        <h2>What We Cover</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>💄 Beauty</h3>
+                <p>Explore beauty products and useful shopping tips.</p>
+            </div>
+
+            <div class="card">
+                <h3>💻 Technology</h3>
+                <p>Discover useful technology and gadgets.</p>
+            </div>
+
+            <div class="card">
+                <h3>👗 Fashion</h3>
+                <p>Find interesting fashion products and ideas.</p>
+            </div>
+
+            <div class="card">
+                <h3>🏠 Home</h3>
+                <p>Useful products and ideas for everyday life.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Fatmah Finds</h2>
+
+        <p>
+            Fatmah Finds is a website created to share useful product
+            information, reviews and shopping ideas.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p>
+            Have a question or suggestion? Get in touch with us.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Fatmah Finds. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
