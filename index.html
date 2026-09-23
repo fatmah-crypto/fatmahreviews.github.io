@@ -3,151 +3,350 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatmah Finds</title>
+
+    <title>Fatmah Finds | Product Reviews & Shopping Tips</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background: #fff5f8;
+            font-family: Arial, sans-serif;
+            background: #fff7fa;
             color: #333;
         }
 
         header {
-            background: #e91e63;
+            background: linear-gradient(135deg, #e91e63, #ad1457);
             color: white;
             text-align: center;
-            padding: 50px 20px;
+            padding: 65px 20px;
         }
 
         header h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
+            font-size: 48px;
+            margin: 0 0 10px;
         }
 
         header p {
-            font-size: 18px;
+            font-size: 19px;
+            margin: 0;
         }
 
         nav {
             background: white;
+            padding: 18px;
             text-align: center;
-            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         nav a {
-            color: #e91e63;
+            color: #d81b60;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
         }
 
-        section {
+        nav a:hover {
+            color: #880e4f;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px 35px;
             max-width: 900px;
             margin: auto;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            color: #444;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .section {
+            max-width: 1000px;
+            margin: auto;
             padding: 40px 20px;
+        }
+
+        .section h2 {
             text-align: center;
+            color: #d81b60;
+            margin-bottom: 30px;
         }
 
         .cards {
             display: flex;
-            gap: 20px;
             justify-content: center;
+            gap: 25px;
             flex-wrap: wrap;
         }
 
         .card {
             background: white;
-            padding: 25px;
             width: 220px;
-            border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            padding: 25px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .card .icon {
+            font-size: 45px;
         }
 
         .card h3 {
-            color: #e91e63;
+            color: #d81b60;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background: white;
+            width: 280px;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .product-image {
+            font-size: 70px;
+            padding: 20px;
+        }
+
+        .product h3 {
+            color: #d81b60;
+        }
+
+        .button {
+            display: inline-block;
+            background: #e91e63;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #ad1457;
+        }
+
+        .about {
+            background: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .disclosure {
+            background: #fff0f5;
+            border-left: 5px solid #e91e63;
+            padding: 20px;
+            margin: 40px auto;
+            max-width: 850px;
+            line-height: 1.6;
         }
 
         footer {
             background: #333;
             color: white;
             text-align: center;
-            padding: 25px;
+            padding: 30px 20px;
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 36px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .card,
+            .product {
+                width: 90%;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Fatmah Finds</h1>
-        <p>Discover. Compare. Choose.</p>
-    </header>
+<header>
+    <h1>Fatmah Finds</h1>
+    <p>Discover. Compare. Choose.</p>
+</header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+    <a href="#">Home</a>
+    <a href="#categories">Categories</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <section>
-        <h2>Welcome to Fatmah Finds</h2>
+<section class="hero">
 
-        <p>
-            Discover useful products, shopping tips and honest product reviews
-            all in one place.
-        </p>
-    </section>
+    <h2>Welcome to Fatmah Finds 💕</h2>
 
-    <section id="reviews">
-        <h2>What We Cover</h2>
+    <p>
+        Discover useful products, honest reviews and shopping tips
+        designed to help you make smarter purchasing decisions.
+    </p>
 
-        <div class="cards">
+</section>
 
-            <div class="card">
-                <h3>💄 Beauty</h3>
-                <p>Explore beauty products and useful shopping tips.</p>
-            </div>
+<section class="section" id="categories">
 
-            <div class="card">
-                <h3>💻 Technology</h3>
-                <p>Discover useful technology and gadgets.</p>
-            </div>
+    <h2>Explore Our Categories</h2>
 
-            <div class="card">
-                <h3>👗 Fashion</h3>
-                <p>Find interesting fashion products and ideas.</p>
-            </div>
+    <div class="cards">
 
-            <div class="card">
-                <h3>🏠 Home</h3>
-                <p>Useful products and ideas for everyday life.</p>
-            </div>
+        <div class="card">
+            <div class="icon">💄</div>
+            <h3>Beauty</h3>
+            <p>Beauty products, tools and useful shopping ideas.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Technology</h3>
+            <p>Gadgets, electronics and useful technology.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">👗</div>
+            <h3>Fashion</h3>
+            <p>Fashion finds and accessories worth exploring.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏠</div>
+            <h3>Home</h3>
+            <p>Useful products and ideas for everyday living.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section" id="reviews">
+
+    <h2>Featured Finds</h2>
+
+    <div class="products">
+
+        <div class="product">
+
+            <div class="product-image">🎧</div>
+
+            <h3>Wireless Earbuds</h3>
+
+            <p>
+                Things to consider when choosing wireless earbuds,
+                including battery life, comfort and sound quality.
+            </p>
+
+            <a class="button" href="#">Read Review</a>
 
         </div>
-    </section>
 
-    <section id="about">
-        <h2>About Fatmah Finds</h2>
+        <div class="product">
 
-        <p>
-            Fatmah Finds is a website created to share useful product
-            information, reviews and shopping ideas.
-        </p>
-    </section>
+            <div class="product-image">⌚</div>
 
-    <section id="contact">
-        <h2>Contact</h2>
+            <h3>Smart Watches</h3>
 
-        <p>
-            Have a question or suggestion? Get in touch with us.
-        </p>
-    </section>
+            <p>
+                Explore features to look for when choosing
+                a smartwatch.
+            </p>
 
-    <footer>
-        <p>© 2026 Fatmah Finds. All rights reserved.</p>
-    </footer>
+            <a class="button" href="#">Read Review</a>
+
+        </div>
+
+        <div class="product">
+
+            <div class="product-image">💄</div>
+
+            <h3>Beauty Finds</h3>
+
+            <p>
+                Discover useful beauty products and shopping tips.
+            </p>
+
+            <a class="button" href="#">Read Review</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <h2>About Fatmah Finds</h2>
+
+    <p>
+        Fatmah Finds is a product discovery and review website
+        created to share useful information, shopping tips and
+        interesting finds with readers.
+    </p>
+
+</section>
+
+<div class="disclosure">
+
+    <strong>Affiliate Disclosure</strong>
+
+    <p>
+        Some links on Fatmah Finds may be affiliate links.
+        If you purchase something through an affiliate link,
+        we may earn a commission at no additional cost to you.
+    </p>
+
+</div>
+
+<section class="section" id="contact">
+
+    <h2>Contact</h2>
+
+    <p style="text-align:center;">
+        Have a question or suggestion?
+        We'd love to hear from you.
+    </p>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Fatmah Finds. All rights reserved.</p>
+
+</footer>
 
 </body>
 </html>
